@@ -12,7 +12,7 @@ namespace fs = std::filesystem;
 
 static void printUsage(const char* prog) {
     std::cout <<
-        "ImgToRix - turn a matrix of numbers into an image\n\n"
+        "RixToImg - turn a matrix of numbers into an image\n\n"
         "Usage:\n"
         "  " << prog << " <matrix_file> [options]\n"
         "  " << prog << " --demo uv|uw [options]\n\n"
@@ -116,7 +116,7 @@ int main(int argc, char** argv) {
 
         // 5. Optionally show it
         if (show) {
-            cv::imshow("ImgToRix", img);
+            cv::imshow("RixToImg", img);
             cv::waitKey(0);
         }
     } catch (const std::exception& e) {

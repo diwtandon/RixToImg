@@ -1,4 +1,4 @@
-# ImgToRix
+# RixToImg
 
 A small C++ command-line tool that turns a **matrix of numbers into an image**.
 
@@ -42,8 +42,8 @@ Install OpenCV, CMake and a compiler with your package manager (for example `sud
 ## Build
 
 ```bash
-git clone https://github.com/<diwtandon>/ImgToRix.git
-cd ImgToRix
+git clone https://github.com/<diwtandon>/RixToImg.git
+cd RixToImg
 mkdir build && cd build
 cmake .. -G Ninja      
 ninja                  
@@ -52,11 +52,11 @@ ninja
 ## Usage
 
 ```bash
-./imgtorix examples/checkerboard.csv --scale 40 --show
+./rixtoimg examples/checkerboard.csv --scale 40 --show
 
 
-./imgtorix --demo uv --scale 4
-./imgtorix --demo uw --scale 4 -o uw.png
+./rixtoimg --demo uv --scale 4
+./rixtoimg --demo uw --scale 4 -o uw.png
 ```
 
 | Option | Meaning |
